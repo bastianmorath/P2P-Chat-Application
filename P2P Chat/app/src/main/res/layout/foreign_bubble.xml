@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/MyGrey"
+        android:layout_marginLeft="20dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/orange_bubble"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:id="@+id/lin"
+        android:layout_below="@+id/sender">
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:paddingBottom="3dp"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_stamp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:maxWidth="50dp"
+        android:textColor="@color/MyGrey"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/sender"/>
+        <!--
+        android:paddingTop="5dp"
+        android:layout_below="@+id/sender"
+        android:layout_toRightOf="@id/lin"
+        android:layout_marginLeft="8dp"-->
+
+</RelativeLayout>

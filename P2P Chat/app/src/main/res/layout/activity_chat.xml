@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ch.ethz.inf.vs.a1.rubfisch.p2pchat.ChatActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <ListView
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.8"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="14dp"
+        android:transcriptMode="alwaysScroll"
+        android:stackFromBottom="true"
+        android:background="@android:color/white"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLightGrey">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:ems="10"
+            android:imeOptions="actionSend"
+            android:inputType="textMultiLine"
+            android:background="@drawable/etext_background"
+            android:layout_margin="4dp"
+            android:padding="5dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/send"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_send_white_48dp"
+                android:backgroundTint="@color/MyOrange"
+                android:layout_centerInParent="true"/>/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

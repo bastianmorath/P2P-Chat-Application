@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ch.ethz.inf.vs.a1.rubfisch.p2pchat.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="OffChat"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+
+        android:text="Choose username: "
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+ />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_border_edittext"
+        android:hint="Username"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+ />
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Join!"
+        android:textColor="#ffffff"
+        android:onClick="joinPressed"
+       />
+
+
+</LinearLayout>
